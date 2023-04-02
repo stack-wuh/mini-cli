@@ -23,8 +23,7 @@ const workflow = async () => {
 
   const { body } = ast.program
 
-  body.forEach(node => {
-    if (!node.declaration) return
+  body.filter(node => node.declaration).forEach(node => {
     const { declarations } = node.declaration
     const head = declarations[0]
 
