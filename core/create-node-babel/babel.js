@@ -39,21 +39,24 @@ const workflowBabel = async () => {
     VariableDeclaration (path) {
       const [head] = path.node.declarations
 
-
+      // 添加后置注释
       path.addComment('trailing', `${head.id.name} 的后置注释`, false)
+      // 添加前置注释
       path.addComment('leading', `${head.id.name} 的前置注释`, false)
     }
   })
 
+  // 生成源代码
   const result = await core.transformFromAstSync(ast, source, {
     generatorOpts: {
       minified: false,
       comments: true,
     }
   })
-  console.log('======> result', prettier.format(result.code, { semi: false, quotes: 'double' }))
 
-  // console.log('=====> source', ast)
+  // 使用prettier去掉句尾分号，改双引号为单引号
+  const template = prettier.format(result.code, { semi: false, singleQuote: true,  })
+  console.log('======> result', template)
 }
 
 workflowBabel()
