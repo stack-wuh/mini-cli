@@ -1,7 +1,14 @@
+/**
+ * @NOTE before
+ */
 var num1 = 10
 
 var str = 'str1'
 
+/**
+ * @NOTE before
+ * 
+ */
 var date1 = '2023-04-01'
 
 var arr1 = ['1', 2, 3, null, undefined]
