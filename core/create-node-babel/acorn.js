@@ -26,6 +26,7 @@ const workflow = async () => {
   walk.simple(ast, {
     // 找出全部的声明语句节点
     VariableDeclaration (node) {
+      
       const { id } = node.declarations[0]
       // 准备一个块级注释的节点
       const commentNode = {
