@@ -10,6 +10,10 @@ const workflow = async () => {
 
   /**
    * @NOTE 字面量声明对象
+   * 
+   * 
+   * @example
+   * var obj1 = { name: 'shadow' }
    */
   const obj1Node = t.objectExpression([
     t.objectProperty(t.identifier('name'), t.stringLiteral('shadow'))
@@ -20,6 +24,9 @@ const workflow = async () => {
 
   /**
    * @NOTE new关键字创建对象
+   * 
+   * @example
+   * var obj2 = new Object({ name: 'shadow' })
    */
   const obj2CallNode = t.newExpression(t.identifier('Object'), [
     t.objectExpression([
@@ -32,6 +39,8 @@ const workflow = async () => {
 
   /**
    * @NOTE  通过Object.create 方法
+   * @example
+   * var obj3 = Object.create({ name; 'shadow' })
    */
   const obj3CallNode = t.callExpression(
     t.memberExpression(t.identifier('Object'), t.identifier('create')),
@@ -45,6 +54,13 @@ const workflow = async () => {
 
   /**
    * @NOTE 使用工厂函数创建对象
+   * @example
+   * function createObject (o) {
+   *    function F() {}
+   *    F.prototype = o
+   *    return new F()
+   * }
+   * var obj4 = createObject({ name: 'shadow' })
    */
   const obj4Func = t.functionDeclaration(
     t.identifier('createObject'),
@@ -82,6 +98,8 @@ const workflow = async () => {
   /**
    * @NOTE 使用Map创建对象
    * @NOTE 其实质就是使用new 关键字 var m = new Map()
+   * @example
+   * var m = new Map()
    * m.set('a', 1)
    */
   const obj6New = t.newExpression(t.identifier('Map'), [])
