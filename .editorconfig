@@ -1,0 +1,8 @@
+# 缩进选项为 2 个空格
+[*.js]
+indent_style = space
+indent_size = 2
+
+# 换行符选项为 LF
+[*]
+end_of_line = lf
