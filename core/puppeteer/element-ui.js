@@ -59,6 +59,9 @@ const workflowForNavMenu = async () => {
   await browser.close()
 }
 
+
+const NOT_ALLOW_FETCH_MENUS = ['Color', 'Border', 'Icon']
+
 /**
  * @NOTE 在组件页面，获取相关的数据
  *
@@ -72,8 +75,6 @@ const workflowForTarget = async () => {
   let success = 0
   let error = 0
   const errorMaps = {}
-  // console.log('==== menuData', menuData)
-  // const current = menuData.result[0]
 
   const browser = await getBrowser()
   const page = await browser.newPage()
@@ -81,6 +82,14 @@ const workflowForTarget = async () => {
   const walk = async () => {
     while (start < menuData.total) {
       const current = menuData.result[start]
+
+      if (NOT_ALLOW_FETCH_MENUS.includes(current.rename)) {
+        current.body = []
+        start ++
+
+        await walk()
+        return
+      }
 
       if (current.href) {
         console.log('======> 开始导航', current.href)
@@ -101,7 +110,7 @@ const workflowForTarget = async () => {
           return
         }
 
-        const result = await page.evaluate(() => {
+        const result = await page.evaluate((current) => {
           const tableElems = document.querySelectorAll('h3+table')
           const originElems = [...tableElems].map((c) => {
             const labelElem = c.previousElementSibling
@@ -119,13 +128,19 @@ const workflowForTarget = async () => {
               }, {})
             })
 
-            const label = labelElem.lastChild.textContent
+            let label = labelElem.lastChild.textContent
               .trim()
               .toLocaleLowerCase()
+            
+            if (['attributes', 'events', 'slots'].includes(label)) {
+              label = `${current.rename} ${label}`
+            }
             const type = label.match(/[a-zA-Z]+/gi).slice(-1)[0]
+            const index = label.match(/[a-zA-Z]+(-[a-zA-Z]+)?/gi)[0]
 
             return {
               label,
+              index,
               type,
               labels,
               values,
@@ -134,9 +149,35 @@ const workflowForTarget = async () => {
           })
 
           return originElems
+        }, current)
+
+        const children = result.reduce((acc, curr) => {
+          acc[curr.index] = [].concat(acc[curr.index], curr).filter(Boolean)
+          return acc
+        }, {})
+
+        const childrenTypes = Object.keys(children)
+        childrenTypes.forEach((child) => {
+          if (current.rename.toLocaleLowerCase() === child.toLocaleLowerCase()) {
+            current.body = children[child]
+          } else {
+            const _current = {
+              name: current.name + child,
+              rename: current.rename,
+              prefixName: [`el-${child}`, `kye-${child}`],
+              href: current.href,
+              body: children[child]
+            }
+
+            current.children = [].concat(current.children, _current).filter(Boolean)
+          }
         })
 
-        current.body = result
+        current.childrenTypes = childrenTypes
+        
+
+        // current.body = result
+        // current.children = children
         await fs.writeJSON('./element-ui-nav-menu.json', menuData)
         success++
       }
@@ -153,45 +194,10 @@ const workflowForTarget = async () => {
   menuData.success = success
 
   await fs.writeJSON('./element-ui-nav-menu.json', menuData)
-
-  // console.log('======> 开始导航')
-  // await page.goto(current.href)
-  // console.log('=======> 页面已导航')
-
-  // await page.waitForSelector('h3+table')
-  // console.log('=======> 目标对象已渲染')
-
-  // const result = await page.evaluate(() => {
-  //   const tableElems = document.querySelectorAll('h3+table')
-  //   const originElems = [...tableElems].map(c => {
-  //     const labelElem = c.previousElementSibling
-  //     const labels = [...c.querySelectorAll('thead tr th')].map(c => c.innerText)
-  //     const values = [...c.querySelectorAll('tbody tr')].map(c => {
-  //       return [...c.querySelectorAll('td')].map(c => c.innerText)
-  //     })
-  //     const data = values.map(value => {
-  //       return value.map((c, idx) => ({ [labels[idx]]: c }))
-  //     })
-
-  //     return {
-  //       label: labelElem.lastChild.textContent.trim(),
-  //       labels,
-  //       values,
-  //       data
-  //     }
-  //   })
-
-  //   return originElems
-  // })
-
-  // current.body = result
-  // await fs.writeJSON('./element-ui-nav-menu.json', menuData)
 }
 
-// workflowForTarget()
-
 const workflow = async () => {
-  // await workflowForNavMenu()
+  await workflowForNavMenu()
   await workflowForTarget()
 }
 
