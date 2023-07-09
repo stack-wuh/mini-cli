@@ -21,6 +21,7 @@
     "acorn": "^8.8.2",
     "acorn-walk": "^8.2.0",
     "chalk": "^4.1.0",
+    "cheerio": "^1.0.0-rc.12",
     "clear": "^0.1.0",
     "commander": "^6.1.0",
     "download-git-repo": "^3.0.2",
@@ -31,6 +32,7 @@
     "open": "^7.3.0",
     "ora": "^5.1.0",
     "prettier": "^2.8.7",
+    "puppeteer": "^20.8.0",
     "vue-template-compiler": "2.7.2",
     "watch": "^1.0.2"
   }
