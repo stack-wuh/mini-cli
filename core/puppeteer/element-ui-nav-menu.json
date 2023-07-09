@@ -9,8 +9,8 @@
       "href": "https://element.eleme.cn/#/zh-CN/component/layout",
       "children": [
         {
-          "name": "Layout 布局row",
-          "rename": "Layout",
+          "name": "Layout 布局",
+          "rename": "Layout.Row",
           "prefixName": ["el-row", "kye-row"],
           "href": "https://element.eleme.cn/#/zh-CN/component/layout",
           "body": [
@@ -85,8 +85,8 @@
           ]
         },
         {
-          "name": "Layout 布局col",
-          "rename": "Layout",
+          "name": "Layout 布局",
+          "rename": "Layout.Col",
           "prefixName": ["el-col", "kye-col"],
           "href": "https://element.eleme.cn/#/zh-CN/component/layout",
           "body": [
@@ -248,8 +248,8 @@
       ],
       "children": [
         {
-          "name": "Container 布局容器header",
-          "rename": "Container",
+          "name": "Container 布局容器",
+          "rename": "Container.Header",
           "prefixName": ["el-header", "kye-header"],
           "href": "https://element.eleme.cn/#/zh-CN/component/container",
           "body": [
@@ -272,8 +272,8 @@
           ]
         },
         {
-          "name": "Container 布局容器aside",
-          "rename": "Container",
+          "name": "Container 布局容器",
+          "rename": "Container.Aside",
           "prefixName": ["el-aside", "kye-aside"],
           "href": "https://element.eleme.cn/#/zh-CN/component/container",
           "body": [
@@ -296,8 +296,8 @@
           ]
         },
         {
-          "name": "Container 布局容器footer",
-          "rename": "Container",
+          "name": "Container 布局容器",
+          "rename": "Container.Footer",
           "prefixName": ["el-footer", "kye-footer"],
           "href": "https://element.eleme.cn/#/zh-CN/component/container",
           "body": [
@@ -614,8 +614,8 @@
       ],
       "children": [
         {
-          "name": "Radio 单选框radio-group",
-          "rename": "Radio",
+          "name": "Radio 单选框",
+          "rename": "Radio.Radio-group",
           "prefixName": ["el-radio-group", "kye-radio-group"],
           "href": "https://element.eleme.cn/#/zh-CN/component/radio",
           "body": [
@@ -712,8 +712,8 @@
           ]
         },
         {
-          "name": "Radio 单选框radio-button",
-          "rename": "Radio",
+          "name": "Radio 单选框",
+          "rename": "Radio.Radio-button",
           "prefixName": ["el-radio-button", "kye-radio-button"],
           "href": "https://element.eleme.cn/#/zh-CN/component/radio",
           "body": [
@@ -893,8 +893,8 @@
       ],
       "children": [
         {
-          "name": "Checkbox 多选框checkbox-group",
-          "rename": "Checkbox",
+          "name": "Checkbox 多选框",
+          "rename": "Checkbox.Checkbox-group",
           "prefixName": ["el-checkbox-group", "kye-checkbox-group"],
           "href": "https://element.eleme.cn/#/zh-CN/component/checkbox",
           "body": [
@@ -999,8 +999,8 @@
           ]
         },
         {
-          "name": "Checkbox 多选框checkbox-button",
-          "rename": "Checkbox",
+          "name": "Checkbox 多选框",
+          "rename": "Checkbox.Checkbox-button",
           "prefixName": ["el-checkbox-button", "kye-checkbox-button"],
           "href": "https://element.eleme.cn/#/zh-CN/component/checkbox",
           "body": [
@@ -1446,8 +1446,8 @@
       ],
       "children": [
         {
-          "name": "Input 输入框autocomplete",
-          "rename": "Input",
+          "name": "Input 输入框",
+          "rename": "Input.Autocomplete",
           "prefixName": ["el-autocomplete", "kye-autocomplete"],
           "href": "https://element.eleme.cn/#/zh-CN/component/input",
           "body": [
@@ -1873,8 +1873,8 @@
       ],
       "children": [
         {
-          "name": "InputNumber 计数器methods",
-          "rename": "InputNumber",
+          "name": "InputNumber 计数器",
+          "rename": "InputNumber.Methods",
           "prefixName": ["el-methods", "kye-methods"],
           "href": "https://element.eleme.cn/#/zh-CN/component/input-number",
           "body": [
@@ -2266,8 +2266,8 @@
       ],
       "children": [
         {
-          "name": "Select 选择器option",
-          "rename": "Select",
+          "name": "Select 选择器",
+          "rename": "Select.Option",
           "prefixName": ["el-option", "kye-option"],
           "href": "https://element.eleme.cn/#/zh-CN/component/select",
           "body": [
@@ -2346,8 +2346,8 @@
           ]
         },
         {
-          "name": "Select 选择器methods",
-          "rename": "Select",
+          "name": "Select 选择器",
+          "rename": "Select.Methods",
           "prefixName": ["el-methods", "kye-methods"],
           "href": "https://element.eleme.cn/#/zh-CN/component/select",
           "body": [
@@ -2641,8 +2641,8 @@
       ],
       "children": [
         {
-          "name": "Cascader 级联选择器cascaderpanel",
-          "rename": "Cascader",
+          "name": "Cascader 级联选择器",
+          "rename": "Cascader.Cascaderpanel",
           "prefixName": ["el-cascaderpanel", "kye-cascaderpanel"],
           "href": "https://element.eleme.cn/#/zh-CN/component/cascader",
           "body": [
@@ -2759,8 +2759,8 @@
           ]
         },
         {
-          "name": "Cascader 级联选择器props",
-          "rename": "Cascader",
+          "name": "Cascader 级联选择器",
+          "rename": "Cascader.Props",
           "prefixName": ["el-props", "kye-props"],
           "href": "https://element.eleme.cn/#/zh-CN/component/cascader",
           "body": [
@@ -3108,8 +3108,8 @@
       ],
       "children": [
         {
-          "name": "Switch 开关methods",
-          "rename": "Switch",
+          "name": "Switch 开关",
+          "rename": "Switch.Methods",
           "prefixName": ["el-methods", "kye-methods"],
           "href": "https://element.eleme.cn/#/zh-CN/component/switch",
           "body": [
@@ -3624,8 +3624,8 @@
       ],
       "children": [
         {
-          "name": "TimePicker 时间选择器time",
-          "rename": "TimePicker",
+          "name": "TimePicker 时间选择器",
+          "rename": "TimePicker.Time",
           "prefixName": ["el-time", "kye-time"],
           "href": "https://element.eleme.cn/#/zh-CN/component/time-picker",
           "body": [
@@ -3732,8 +3732,8 @@
           ]
         },
         {
-          "name": "TimePicker 时间选择器methods",
-          "rename": "TimePicker",
+          "name": "TimePicker 时间选择器",
+          "rename": "TimePicker.Methods",
           "prefixName": ["el-methods", "kye-methods"],
           "href": "https://element.eleme.cn/#/zh-CN/component/time-picker",
           "body": [
@@ -4079,8 +4079,8 @@
       ],
       "children": [
         {
-          "name": "DatePicker 日期选择器picker",
-          "rename": "DatePicker",
+          "name": "DatePicker 日期选择器",
+          "rename": "DatePicker.Picker",
           "prefixName": ["el-picker", "kye-picker"],
           "href": "https://element.eleme.cn/#/zh-CN/component/date-picker",
           "body": [
@@ -4161,8 +4161,8 @@
           ]
         },
         {
-          "name": "DatePicker 日期选择器shortcuts",
-          "rename": "DatePicker",
+          "name": "DatePicker 日期选择器",
+          "rename": "DatePicker.Shortcuts",
           "prefixName": ["el-shortcuts", "kye-shortcuts"],
           "href": "https://element.eleme.cn/#/zh-CN/component/date-picker",
           "body": [
@@ -4201,8 +4201,8 @@
           ]
         },
         {
-          "name": "DatePicker 日期选择器methods",
-          "rename": "DatePicker",
+          "name": "DatePicker 日期选择器",
+          "rename": "DatePicker.Methods",
           "prefixName": ["el-methods", "kye-methods"],
           "href": "https://element.eleme.cn/#/zh-CN/component/date-picker",
           "body": [
@@ -4542,8 +4542,8 @@
       ],
       "children": [
         {
-          "name": "DateTimePicker 日期时间选择器picker",
-          "rename": "DateTimePicker",
+          "name": "DateTimePicker 日期时间选择器",
+          "rename": "DateTimePicker.Picker",
           "prefixName": ["el-picker", "kye-picker"],
           "href": "https://element.eleme.cn/#/zh-CN/component/datetime-picker",
           "body": [
@@ -4610,8 +4610,8 @@
           ]
         },
         {
-          "name": "DateTimePicker 日期时间选择器shortcuts",
-          "rename": "DateTimePicker",
+          "name": "DateTimePicker 日期时间选择器",
+          "rename": "DateTimePicker.Shortcuts",
           "prefixName": ["el-shortcuts", "kye-shortcuts"],
           "href": "https://element.eleme.cn/#/zh-CN/component/datetime-picker",
           "body": [
@@ -4650,8 +4650,8 @@
           ]
         },
         {
-          "name": "DateTimePicker 日期时间选择器methods",
-          "rename": "DateTimePicker",
+          "name": "DateTimePicker 日期时间选择器",
+          "rename": "DateTimePicker.Methods",
           "prefixName": ["el-methods", "kye-methods"],
           "href": "https://element.eleme.cn/#/zh-CN/component/datetime-picker",
           "body": [
@@ -4677,8 +4677,8 @@
       "href": "https://element.eleme.cn/#/zh-CN/component/upload",
       "children": [
         {
-          "name": "Upload 上传attribute",
-          "rename": "Upload",
+          "name": "Upload 上传",
+          "rename": "Upload.Attribute",
           "prefixName": ["el-attribute", "kye-attribute"],
           "href": "https://element.eleme.cn/#/zh-CN/component/upload",
           "body": [
@@ -4983,8 +4983,8 @@
           ]
         },
         {
-          "name": "Upload 上传slot",
-          "rename": "Upload",
+          "name": "Upload 上传",
+          "rename": "Upload.Slot",
           "prefixName": ["el-slot", "kye-slot"],
           "href": "https://element.eleme.cn/#/zh-CN/component/upload",
           "body": [
@@ -5005,8 +5005,8 @@
           ]
         },
         {
-          "name": "Upload 上传methods",
-          "rename": "Upload",
+          "name": "Upload 上传",
+          "rename": "Upload.Methods",
           "prefixName": ["el-methods", "kye-methods"],
           "href": "https://element.eleme.cn/#/zh-CN/component/upload",
           "body": [
@@ -5594,8 +5594,8 @@
       ],
       "children": [
         {
-          "name": "Transfer 穿梭框slot",
-          "rename": "Transfer",
+          "name": "Transfer 穿梭框",
+          "rename": "Transfer.Slot",
           "prefixName": ["el-slot", "kye-slot"],
           "href": "https://element.eleme.cn/#/zh-CN/component/transfer",
           "body": [
@@ -5616,8 +5616,8 @@
           ]
         },
         {
-          "name": "Transfer 穿梭框scoped",
-          "rename": "Transfer",
+          "name": "Transfer 穿梭框",
+          "rename": "Transfer.Scoped",
           "prefixName": ["el-scoped", "kye-scoped"],
           "href": "https://element.eleme.cn/#/zh-CN/component/transfer",
           "body": [
@@ -5634,8 +5634,8 @@
           ]
         },
         {
-          "name": "Transfer 穿梭框methods",
-          "rename": "Transfer",
+          "name": "Transfer 穿梭框",
+          "rename": "Transfer.Methods",
           "prefixName": ["el-methods", "kye-methods"],
           "href": "https://element.eleme.cn/#/zh-CN/component/transfer",
           "body": [
@@ -5905,8 +5905,8 @@
       ],
       "children": [
         {
-          "name": "Form 表单form-item",
-          "rename": "Form",
+          "name": "Form 表单",
+          "rename": "Form.Form-item",
           "prefixName": ["el-form-item", "kye-form-item"],
           "href": "https://element.eleme.cn/#/zh-CN/component/form",
           "body": [
@@ -6793,8 +6793,8 @@
       ],
       "children": [
         {
-          "name": "Table 表格table-column",
-          "rename": "Table",
+          "name": "Table 表格",
+          "rename": "Table.Table-column",
           "prefixName": ["el-table-column", "kye-table-column"],
           "href": "https://element.eleme.cn/#/zh-CN/component/table",
           "body": [
@@ -7908,8 +7908,8 @@
       ],
       "children": [
         {
-          "name": "Tree 树形控件props",
-          "rename": "Tree",
+          "name": "Tree 树形控件",
+          "rename": "Tree.Props",
           "prefixName": ["el-props", "kye-props"],
           "href": "https://element.eleme.cn/#/zh-CN/component/tree",
           "body": [
@@ -7982,8 +7982,8 @@
           ]
         },
         {
-          "name": "Tree 树形控件scoped",
-          "rename": "Tree",
+          "name": "Tree 树形控件",
+          "rename": "Tree.Scoped",
           "prefixName": ["el-scoped", "kye-scoped"],
           "href": "https://element.eleme.cn/#/zh-CN/component/tree",
           "body": [
@@ -8206,8 +8206,8 @@
       ],
       "children": [
         {
-          "name": "Pagination 分页slot",
-          "rename": "Pagination",
+          "name": "Pagination 分页",
+          "rename": "Pagination.Slot",
           "prefixName": ["el-slot", "kye-slot"],
           "href": "https://element.eleme.cn/#/zh-CN/component/pagination",
           "body": [
@@ -8410,8 +8410,8 @@
       ],
       "children": [
         {
-          "name": "Avatar 头像slot",
-          "rename": "Avatar",
+          "name": "Avatar 头像",
+          "rename": "Avatar.Slot",
           "prefixName": ["el-slot", "kye-slot"],
           "href": "https://element.eleme.cn/#/zh-CN/component/avatar",
           "body": [
@@ -9167,8 +9167,8 @@
       ],
       "children": [
         {
-          "name": "Alert 警告slot",
-          "rename": "Alert",
+          "name": "Alert 警告",
+          "rename": "Alert.Slot",
           "prefixName": ["el-slot", "kye-slot"],
           "href": "https://element.eleme.cn/#/zh-CN/component/alert",
           "body": [
@@ -9198,8 +9198,8 @@
       "href": "https://element.eleme.cn/#/zh-CN/component/loading",
       "children": [
         {
-          "name": "Loading 加载options",
-          "rename": "Loading",
+          "name": "Loading 加载",
+          "rename": "Loading.Options",
           "prefixName": ["el-options", "kye-options"],
           "href": "https://element.eleme.cn/#/zh-CN/component/loading",
           "body": [
@@ -9313,8 +9313,8 @@
       "href": "https://element.eleme.cn/#/zh-CN/component/message",
       "children": [
         {
-          "name": "Message 消息提示options",
-          "rename": "Message",
+          "name": "Message 消息提示",
+          "rename": "Message.Options",
           "prefixName": ["el-options", "kye-options"],
           "href": "https://element.eleme.cn/#/zh-CN/component/message",
           "body": [
@@ -9450,8 +9450,8 @@
       "href": "https://element.eleme.cn/#/zh-CN/component/message-box",
       "children": [
         {
-          "name": "MessageBox 弹框options",
-          "rename": "MessageBox",
+          "name": "MessageBox 弹框",
+          "rename": "MessageBox.Options",
           "prefixName": ["el-options", "kye-options"],
           "href": "https://element.eleme.cn/#/zh-CN/component/message-box",
           "body": [
@@ -9835,8 +9835,8 @@
       "href": "https://element.eleme.cn/#/zh-CN/component/notification",
       "children": [
         {
-          "name": "Notification 通知options",
-          "rename": "Notification",
+          "name": "Notification 通知",
+          "rename": "Notification.Options",
           "prefixName": ["el-options", "kye-options"],
           "href": "https://element.eleme.cn/#/zh-CN/component/notification",
           "body": [
@@ -10000,8 +10000,8 @@
       "href": "https://element.eleme.cn/#/zh-CN/component/menu",
       "children": [
         {
-          "name": "NavMenu 导航菜单menu",
-          "rename": "NavMenu",
+          "name": "NavMenu 导航菜单",
+          "rename": "NavMenu.Menu",
           "prefixName": ["el-menu", "kye-menu"],
           "href": "https://element.eleme.cn/#/zh-CN/component/menu",
           "body": [
@@ -10230,8 +10230,8 @@
           ]
         },
         {
-          "name": "NavMenu 导航菜单submenu",
-          "rename": "NavMenu",
+          "name": "NavMenu 导航菜单",
+          "rename": "NavMenu.Submenu",
           "prefixName": ["el-submenu", "kye-submenu"],
           "href": "https://element.eleme.cn/#/zh-CN/component/menu",
           "body": [
@@ -10302,8 +10302,8 @@
           ]
         },
         {
-          "name": "NavMenu 导航菜单menu-item",
-          "rename": "NavMenu",
+          "name": "NavMenu 导航菜单",
+          "rename": "NavMenu.Menu-item",
           "prefixName": ["el-menu-item", "kye-menu-item"],
           "href": "https://element.eleme.cn/#/zh-CN/component/menu",
           "body": [
@@ -10344,8 +10344,8 @@
           ]
         },
         {
-          "name": "NavMenu 导航菜单menu-group",
-          "rename": "NavMenu",
+          "name": "NavMenu 导航菜单",
+          "rename": "NavMenu.Menu-group",
           "prefixName": ["el-menu-group", "kye-menu-group"],
           "href": "https://element.eleme.cn/#/zh-CN/component/menu",
           "body": [
@@ -10509,8 +10509,8 @@
       ],
       "children": [
         {
-          "name": "Tabs 标签页tab-pane",
-          "rename": "Tabs",
+          "name": "Tabs 标签页",
+          "rename": "Tabs.Tab-pane",
           "prefixName": ["el-tab-pane", "kye-tab-pane"],
           "href": "https://element.eleme.cn/#/zh-CN/component/tabs",
           "body": [
@@ -11041,8 +11041,8 @@
       ],
       "children": [
         {
-          "name": "Steps 步骤条step",
-          "rename": "Steps",
+          "name": "Steps 步骤条",
+          "rename": "Steps.Step",
           "prefixName": ["el-step", "kye-step"],
           "href": "https://element.eleme.cn/#/zh-CN/component/steps",
           "body": [
@@ -11356,8 +11356,8 @@
       ],
       "children": [
         {
-          "name": "Dialog 对话框slot",
-          "rename": "Dialog",
+          "name": "Dialog 对话框",
+          "rename": "Dialog.Slot",
           "prefixName": ["el-slot", "kye-slot"],
           "href": "https://element.eleme.cn/#/zh-CN/component/dialog",
           "body": [
@@ -11776,8 +11776,8 @@
       ],
       "children": [
         {
-          "name": "Popover 弹出框slot",
-          "rename": "Popover",
+          "name": "Popover 弹出框",
+          "rename": "Popover.Slot",
           "prefixName": ["el-slot", "kye-slot"],
           "href": "https://element.eleme.cn/#/zh-CN/component/popover",
           "body": [
@@ -11905,8 +11905,8 @@
       ],
       "children": [
         {
-          "name": "Popconfirm 气泡确认框slot",
-          "rename": "Popconfirm",
+          "name": "Popconfirm 气泡确认框",
+          "rename": "Popconfirm.Slot",
           "prefixName": ["el-slot", "kye-slot"],
           "href": "https://element.eleme.cn/#/zh-CN/component/popconfirm",
           "body": [
@@ -12162,8 +12162,8 @@
       ],
       "children": [
         {
-          "name": "Carousel 走马灯carousel-item",
-          "rename": "Carousel",
+          "name": "Carousel 走马灯",
+          "rename": "Carousel.Carousel-item",
           "prefixName": ["el-carousel-item", "kye-carousel-item"],
           "href": "https://element.eleme.cn/#/zh-CN/component/carousel",
           "body": [
@@ -12326,8 +12326,8 @@
       ],
       "children": [
         {
-          "name": "Timeline 时间线timeline-item",
-          "rename": "Timeline",
+          "name": "Timeline 时间线",
+          "rename": "Timeline.Timeline-item",
           "prefixName": ["el-timeline-item", "kye-timeline-item"],
           "href": "https://element.eleme.cn/#/zh-CN/component/timeline",
           "body": [
@@ -12518,8 +12518,8 @@
       ],
       "children": [
         {
-          "name": "Calendar 日历datecell",
-          "rename": "Calendar",
+          "name": "Calendar 日历",
+          "rename": "Calendar.Datecell",
           "prefixName": ["el-datecell", "kye-datecell"],
           "href": "https://element.eleme.cn/#/zh-CN/component/calendar",
           "body": [
