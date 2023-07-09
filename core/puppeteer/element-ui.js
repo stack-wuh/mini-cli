@@ -162,8 +162,8 @@ const workflowForTarget = async () => {
             current.body = children[child]
           } else {
             const _current = {
-              name: current.name + child,
-              rename: current.rename,
+              name: current.name,
+              rename: [current.rename, child.charAt(0).toLocaleUpperCase() + child.slice(1)].join('.'),
               prefixName: [`el-${child}`, `kye-${child}`],
               href: current.href,
               body: children[child]
